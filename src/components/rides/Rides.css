@@ -1,0 +1,151 @@
+:root {
+  --wow-blue-color: #0032a0 !important;
+  --wow-red-color: #d0112b !important;
+  --wow-green-color: #248324 !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0rem !important;
+}
+.rides {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rides__left {
+  flex: 0.3;
+  padding: 10px 0;
+}
+
+.rides__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.rides__header_items > i {
+  position: absolute;
+  left: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.rides__header_items > h4 {
+  font-weight: 600;
+}
+
+.rides__navbar {
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  padding: 0 2.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #dfdfdf77;
+}
+
+.rides__tab-item {
+  font-size: 14px;
+  opacity: 0.3;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 22%;
+  color: #000;
+  font-weight: 500;
+}
+
+.rides__tab-item:hover {
+  opacity: 1;
+  color: var(--wow-blue-color);
+}
+
+.rides__tab-item.active {
+  border-bottom: 3px solid var(--wow-red-color);
+  opacity: 1;
+  color: var(--wow-blue-color);
+}
+
+.rides__right {
+  flex: 0.7;
+  background-image: url("../../../public/images/side-banners/slide-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .rides__item-more-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.rides__item-more-details > i {
+  font-weight: bold;
+  padding-left: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+} */
+
+@media (max-width: 412px) {
+  .rides__right {
+    display: none;
+  }
+  .rides__left {
+    flex: 1;
+  }
+}
+
+.rides__loading {
+}
+.rides__loader {
+  margin-top: 2% !important;
+}
+
+.rides__end-message {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.rides__end-message-one {
+  color: var(--wow-red-color);
+}
+
+.rides__end-message-two {
+  color: var(--wow-blue-color);
+}
+.rides__error {
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

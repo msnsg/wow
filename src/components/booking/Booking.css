@@ -1,0 +1,135 @@
+@import "../../styles/variables.css";
+
+.booking__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking__left-column {
+  flex: var(--left-screen-size-flex);
+  padding: 0px 0;
+}
+
+.booking__right-column {
+  flex: var(--right-screen-size-flex);
+  background-image: url("../../../public/images/booking-img/slide-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.booking__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.booking__header_items i {
+  position: absolute;
+  left: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.booking__header_items h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.booking {
+  padding: 0.3rem;
+}
+
+.left__container {
+  overflow-x: hidden;
+  text-align: center;
+  scroll-behavior: smooth;
+  padding: 1.3rem;
+}
+
+.left__container::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.left__container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.left__container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.left__container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.booking__sub-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.booking__sub-btn button {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 4rem;
+}
+
+#contact_form {
+  margin-right: 1rem;
+}
+.re__submit_btn {
+  background-color: #0032a0;
+  color: white;
+  border: none;
+}
+
+.re__clr_btn {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.reg__input {
+  border: 1px solid rgb(165, 155, 155) !important;
+}
+.reg__input:focus {
+  box-shadow: none !important;
+  border: 1px solid rgb(165, 155, 155) !important;
+}
+
+@media (max-width: 412px) {
+  .booking__right-column {
+    display: none;
+  }
+  .booking__left-column {
+    flex: 1;
+  }
+  #contact_form {
+    margin-right: 0rem;
+  }
+}
+
+
+.insurance_tc_title {
+  padding: 0.1rem 0;
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #b82d1b;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.insurance_desc {
+  text-align: start;
+  font-size: 1rem;
+  color: #2b2a2a;
+  margin-left: 10px;
+}

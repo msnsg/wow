@@ -1,0 +1,195 @@
+.active_rides__item-container {
+  display: block;
+  border-bottom: 0.2rem dashed #cfcfcf;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+.active_rides__item-booking-at {
+  color: var(--wow-blue-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+.active_rides__item-amt {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: end;
+  color: #000;
+}
+
+.active_rides__item-amt svg {
+  font-weight: bold;
+}
+
+.active_rides__item-booking-id {
+  padding: 0.4rem 0;
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #2b2a2a;
+}
+
+.active_rides__item-pickup-dot {
+  padding-top: 0.5rem;
+  color: var(--wow-blue-color);
+  text-align: center;
+  font-weight: 900;
+}
+
+.active_rides__item-pickup {
+  padding-top: 1rem;
+  text-align: start;
+  text-transform: capitalize;
+  color: #474242;
+  font-size: 1rem;
+  font-weight: 401;
+  line-height: 1.3rem;
+  border: none;
+}
+
+.active_rides__item-drop-dot {
+  /* padding-top: 0.5rem; */
+  font-size: 1.2rem;
+  color: var(--wow-red-color);
+  text-align: center;
+}
+
+.active_rides__item-drop {
+  padding-top: 0.5rem;
+  text-align: start;
+  text-transform: capitalize;
+  color: #474242;
+  font-size: 1rem;
+  font-weight: 401;
+  line-height: 1.3rem;
+  border: none;
+}
+
+.active_rides__item-bottom {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.active_rides__item-load_type-local {
+  letter-spacing: 0.01rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 0 1rem;
+  background-color: var(--wow-blue-color);
+  color: #fff;
+  border-radius: 0.2rem;
+}
+.active_rides__item-load_type-outstation {
+  letter-spacing: 0.01rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  background-color: var(--wow-red-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+.active_rides__item-trip-status {
+  text-align: end;
+  letter-spacing: 0.01rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.active_rides__item-trip-status-completed {
+  color: var(--wow-green-color);
+}
+.active_rides__item-trip-status-cancelled {
+  color: var(--wow-red-color);
+}
+
+.active_rides__item-truck-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.active_rides__item-vehicle_logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.active_rides__item-vehicle_name {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem;
+}
+
+.active_rides__item-ds {
+  padding: 1rem;
+}
+
+.active_rides__item-ds > p {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  line-height: 0.2rem;
+  font-weight: 610;
+  text-align: center;
+  color: var(--wow-blue-color);
+}
+
+.active_rides__item-lr > button {
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--wow-blue-color);
+  background-color: white;
+  border-color: var(--wow-blue-color);
+  border-style: dashed;
+  border-width: 0.1rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+}
+.md__trip-cancel-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: small;
+  opacity: 0.9;
+  background-color: var(--wow-red-color);
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+}
+
+.md__trip-cancel-btn:hover {
+  opacity: 1;
+}
+
+.active_rides__item-lr > button:hover {
+  opacity: 1;
+}
+
+#active_rides__tab {
+  overflow-x: hidden;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+#active_rides__tab::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+#active_rides__tab::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#active_rides__tab::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+#active_rides__tab::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

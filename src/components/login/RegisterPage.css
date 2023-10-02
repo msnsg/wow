@@ -1,0 +1,115 @@
+.register__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.register__left-column {
+  flex: 0.27;
+  padding: 10px 0;
+}
+
+.register__right-column {
+  flex: 0.73;
+  background-image: url("../../../public/images/side-banners/slide-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.register__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.register__header_items i {
+  position: absolute;
+  left: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.register__header_items h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.booking {
+  padding: 0.3rem;
+}
+
+.left__container {
+  overflow-x: hidden;
+  text-align: center;
+  scroll-behavior: smooth;
+  padding: 1.3rem;
+}
+
+.left__container::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.left__container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.left__container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.left__container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.register__sub-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.register__sub-btn button {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 4rem;
+}
+
+#contact_form {
+  margin-right: 1rem;
+}
+.re__submit_btn {
+  background-color: #0032a0;
+  color: white;
+  border: none;
+}
+
+.re__clr_btn {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.reg__input {
+  border: 1px solid rgb(165, 155, 155) !important;
+}
+.reg__input:focus {
+  box-shadow: none !important;
+  border: 1px solid rgb(165, 155, 155) !important;
+}
+
+@media (max-width: 412px) {
+  .register__right-column {
+    display: none;
+  }
+  .register__left-column {
+    flex: 1;
+  }
+  #contact_form {
+    margin-right: 0rem;
+  }
+}

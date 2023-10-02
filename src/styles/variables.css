@@ -1,0 +1,17 @@
+/* variables.css */
+:root {
+  --left-screen-size-flex: 0.28;
+  --right-screen-size-flex: 0.72;
+  --wow-blue-color: #0032a0 !important;
+  --wow-red-color: #d0112b !important;
+  --wow-green-color: #248324 !important;
+
+  --wtblue: #040935;
+  --wtyellow: #fdc202;
+  --fullwidth: 100%;
+  --wtred: #f34225;
+  --wtgreen: #5aba25;
+  --wtgrey: #909090e8;
+  --wtlightgrey: #e1dfda;
+  --wtlightblue: #312fcf;
+}
